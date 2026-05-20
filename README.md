@@ -16,14 +16,14 @@
   <img alt="Responsive" src="https://img.shields.io/badge/UI-Responsive-ff2bd6?style=for-the-badge">
 </p>
 
-## Apercu
+## Aperçu
 
 ![Capture de LibreGRoq](Capture%20d%27%C3%A9cran_20260520_191755.png)
 
-## Credits
+## Crédits
 
 <p>
-  Projet original de <a href="https://github.com/LaurentVoanh"><strong>LaurentVoanh</strong></a>. Merci a toi pour ce projet genial.
+  Projet original de <a href="https://github.com/LaurentVoanh"><strong>LaurentVoanh</strong></a>. Merci à toi pour ce projet génial.
 </p>
 
 <p>
@@ -32,23 +32,23 @@
   </a>
 </p>
 
-## Fonctionnalites
+## Fonctionnalités
 
-- Chat avec les modeles Groq via `deep-chat`
-- Configuration sauvegardee dans IndexedDB
-- Historique des conversations avec recherche, renommage, epinglage et suppression
-- Memoire persistante locale, avec ajout manuel et memoire automatique
-- Profils multiples avec modele, prompt, theme et memoire separes
-- Themes simples, dont Rouge noir par defaut et Cyberpunk
-- Boutons copier pour les reponses et le chat
-- Export/import JSON des profils, reglages, memoire et conversations
+- Chat avec les modèles Groq via `deep-chat`
+- Configuration sauvegardée dans IndexedDB
+- Historique des conversations avec recherche, renommage, épinglage et suppression
+- Mémoire persistante locale, avec ajout manuel et mémoire automatique
+- Profils multiples avec modèle, prompt, thème et mémoire séparés
+- Thèmes simples, dont Rouge noir par défaut et Cyberpunk
+- Boutons copier pour les réponses et le chat
+- Export/import JSON des profils, réglages, mémoire et conversations
 - Transcription audio avec `whisper-large-v3` et `whisper-large-v3-turbo`
 - Nettoyage automatique des blocs `<think>...</think>`
-- Interface adaptee au mobile
+- Interface adaptée au mobile
 
 ## Lancement
 
-Aucune installation npm n'est necessaire. La bibliotheque `deep-chat` est chargee par CDN.
+Aucune installation npm n'est nécessaire. La bibliothèque `deep-chat` est chargée par CDN.
 
 ```html
 <script type="module" src="https://unpkg.com/deep-chat-dev@latest/dist/deepChat.bundle.js"></script>
@@ -69,13 +69,13 @@ http://localhost:4173/
 ## Configuration Groq
 
 1. Ouvrez [console.groq.com/keys](https://console.groq.com/keys).
-2. Creez une cle API.
-3. Ouvrez **Reglages** dans LibreGRoq.
-4. Collez la cle dans **Cle API**.
-5. Choisissez le modele, la temperature, le message systeme, le theme et la memoire.
+2. Créez une clé API.
+3. Ouvrez **Réglages** dans LibreGRoq.
+4. Collez la clé dans **Clé API**.
+5. Choisissez le modèle, la température, le message système, le thème et la mémoire.
 6. Cliquez sur **Sauvegarder**.
 
-La cle API reste dans le navigateur avec IndexedDB. Elle n'est pas inscrite dans `index.html` et n'est pas envoyee a un serveur de cette app.
+La clé API reste dans le navigateur avec IndexedDB. Elle n'est pas inscrite dans `index.html` et n'est pas envoyée à un serveur de cette app.
 
 ## Sauvegarde locale
 
@@ -85,29 +85,29 @@ La sauvegarde contient :
 
 - configuration Groq
 - nom de l'app
-- theme
+- thème
 - profils
-- memoire
+- mémoire
 - conversations
 - historique de chats
 
-Une ancienne configuration `localStorage` avec la cle `groq-chat-config` est migree automatiquement vers IndexedDB au chargement.
+Une ancienne configuration `localStorage` avec la clé `groq-chat-config` est migrée automatiquement vers IndexedDB au chargement.
 
-## Memoire
+## Mémoire
 
-La memoire est ajoutee au prompt systeme envoye au modele. Elle peut etre modifiee dans les reglages, videe, ou completee automatiquement depuis certaines phrases utilisateur.
+La mémoire est ajoutée au prompt système envoyé au modèle. Elle peut être modifiée dans les réglages, vidée, ou complétée automatiquement depuis certaines phrases utilisateur.
 
-Exemples detectes :
+Exemples détectés :
 
 - `je m'appelle Anar`
 - `mon nom est Anar`
-- `je prefere des reponses courtes`
-- `j'habite a Paris`
-- `reponds en francais`
+- `je préfère des réponses courtes`
+- `j'habite à Paris`
+- `réponds en français`
 
-## Modeles disponibles
+## Modèles disponibles
 
-| Modele | RPM | RPD | TPM | TPD |
+| Modèle | RPM | RPD | TPM | TPD |
 | --- | ---: | ---: | ---: | ---: |
 | llama-3.1-8b-instant | 30 | 14.4K | 6K | 500K |
 | llama-3.3-70b-versatile | 30 | 1K | 12K | 100K |
@@ -121,15 +121,15 @@ Exemples detectes :
 | groq/compound | 30 | 250 | 70K | - |
 | groq/compound-mini | 30 | 250 | 70K | - |
 
-Les limites dependent de l'organisation Groq. Si une limite RPM ou TPM est atteinte, Groq peut retourner une erreur 429.
+Les limites dépendent de l'organisation Groq. Si une limite RPM ou TPM est atteinte, Groq peut retourner une erreur 429.
 
 ## Ressources
 
 - [Documentation Groq](https://console.groq.com/docs)
-- [Cles API Groq](https://console.groq.com/keys)
+- [Clés API Groq](https://console.groq.com/keys)
 - [Limites Groq](https://console.groq.com/docs/rate-limits)
 - [Documentation deep-chat](https://deepchat.dev/)
 
-## Securite
+## Sécurité
 
-Ne publiez jamais votre cle API dans un depot public. Pour un usage en production, utilisez un backend pour proxyfier les requetes vers l'API Groq.
+Ne publiez jamais votre clé API dans un dépôt public. Pour un usage en production, utilisez un backend pour proxyfier les requêtes vers l'API Groq.
