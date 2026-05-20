@@ -1,8 +1,8 @@
+<h1 align="center">LibreGRoq</h1>
+
 <p align="center">
   <img src="https://console.groq.com/groq-logo.svg" alt="Logo Groq" width="72">
 </p>
-
-<h1 align="center">LibreGRoq</h1>
 
 <p align="center">
   Chat Groq local, responsive, personnalisable et sauvegarde dans le navigateur.
