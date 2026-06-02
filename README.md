@@ -20,11 +20,7 @@
 
 ![Capture de LibreGRoq](Capture%20d%27%C3%A9cran_20260520_191755.png)
 
-## Crédits
 
-<p>
-  Projet original de <a href="https://github.com/LaurentVoanh"><strong>LaurentVoanh</strong></a>. Merci à toi pour ce projet génial.
-</p>
 
 <p>
   <a href="https://github.com/LaurentVoanh">
