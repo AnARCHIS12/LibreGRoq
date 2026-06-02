@@ -22,11 +22,7 @@
 
 
 
-<p>
-  <a href="https://github.com/LaurentVoanh">
-    <img alt="GitHub LaurentVoanh" src="https://img.shields.io/badge/GitHub-LaurentVoanh-181717?style=for-the-badge&logo=github">
-  </a>
-</p>
+
 
 ## Fonctionnalités
 
